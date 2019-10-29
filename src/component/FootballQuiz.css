@@ -1,0 +1,23 @@
+*{
+    color: white;
+    text-align: center;
+}
+body {
+    background: url("https://res.cloudinary.com/yungdenzel/image/upload/v1572278572/football.jpg") no-repeat center fixed;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+ h1 {
+     font-family: 'Courier New', Courier, monospace;
+      color: white;
+     font-size: 180%;
+     padding: 3%;
+     
+
+ }
+
+
+ 
