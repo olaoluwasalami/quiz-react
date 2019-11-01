@@ -11,10 +11,8 @@ let questionBody = props.content;
 
   return (
 <div >
-    <h3> Question {props.questionIndex}</h3>
-    <p class ="gif"> {
-      questionBody.question
-    } </p>
+    <h3>Question{props.questionIndex}</h3>
+    <p className="gif"> {questionBody.question} </p>
     {showOptions()}
 </div>
     )

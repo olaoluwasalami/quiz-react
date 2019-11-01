@@ -15,9 +15,15 @@ body {
       color: white;
      font-size: 180%;
      padding: 3%;
-     
+      }
+.load {
 
- }
-
+    background-color: greenyellow;
+    color: green;
+    min-width: 48px;
+    min-height: 48px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
 
  
