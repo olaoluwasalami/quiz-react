@@ -9,31 +9,29 @@ import Result from './Result';
 class FootballQuiz extends Component {
     constructor(props){
     super(props);
-    this.state = ({
-        showQuiz: false
-        })
-
+    
         this.state ={ 
-                                   
+        visibility: false,
         questionList: QuestionGenerator(),
-        questionIndex: 0,
+        questionIndex: 1,
         score: 0
         }
         this.showContent= this.showContent.bind(this);
         this.scoreQuestion = this.scoreQuestion.bind(this);
-        this.showHome = this.showHome.bind(this);
+        this.toggleVisibility = this.toggleVisibility.bind(this);
+           
     }
 
-    showHome(){        
+    toggleVisibility(){        
         this.setState({
-            showQuiz: true
+            visibility: true
             
         });
         
     }
     showContent(){        
         if(this.state.questionIndex < this.state.questionList.length ){
-         return <Question content = {this.state.questionList[this.state.questionIndex] } scoreQuestion={this.scoreQuestion}/>
+         return <Question content = {this.state.questionList[this.state.questionIndex] } scoreQuestion={this.scoreQuestion}questionIndex={this.state.questionIndex}/>
         }
         return  <Result score={this.state.score}/>
                  
@@ -54,20 +52,22 @@ scoreQuestion(value) {
      }
 }
     render(){
-        return this.setState.showQuiz ? (
-                        <div>
+         if (this.state.visibility){
+          return (
+          <div>
             <h1>Football Quiz</h1>  
             {this.showContent()} 
             </div>
-        ) : (
+        ); } else {
+            return (
              <div>
                  <h1> Football Quiz</h1>
                  <h3> Do you know Football? Challenge yourself</h3>
-            <button  className="load" onClick={this.showHome}> Click here</button>
-           
+            < button className = "load"
+            onClick = {this.toggleVisibility} > Click here </button>           
         </div>
         );
-    }
+    }}
 }
 
 export default FootballQuiz;

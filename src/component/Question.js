@@ -11,7 +11,7 @@ let questionBody = props.content;
 
   return (
 <div >
-    <h3>Question{props.questionIndex}</h3>
+    <h3>Question {props.questionIndex}</h3>
     <p className="gif"> {questionBody.question} </p>
     {showOptions()}
 </div>

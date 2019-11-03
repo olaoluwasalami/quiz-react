@@ -1,4 +1,4 @@
-function QuestionGenerator(count = 5){
+function QuestionGenerator(count = 6){
 const question = [{
             question: "Which is the odd one out?",
             options: ["Liverpool", "Chelsea", "Ajax", "Arsenal"],
