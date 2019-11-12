@@ -10,7 +10,7 @@ let questionBody = props.content;
     }
 
   return (
-<div >
+<div className="text-white">
     <h3>Question {props.questionIndex}</h3>
     <p className="gif"> {questionBody.question} </p>
     {showOptions()}

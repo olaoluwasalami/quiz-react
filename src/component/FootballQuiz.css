@@ -1,15 +1,19 @@
-*{
-    color: white;
+*{    
     text-align: center;
 }
+
 body {
-    background: url("https://res.cloudinary.com/yungdenzel/image/upload/v1572278572/football.jpg") no-repeat center fixed;
+    background: url("https://res.cloudinary.com/yungdenzel/image/upload/v1572278572/football.jpg") no-repeat center center fixed;
     -moz-background-size: cover;
     -webkit-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
+    background-color: #343a40;
 }
 
+h3{
+    color: white;
+}
  h1 {
      font-family: 'Courier New', Courier, monospace;
       color: white;
@@ -26,4 +30,12 @@ body {
     font-weight: bold;
 }
 
- 
+
+ /*mobile devices */
+ @media only screen and (max-width: 460px) {
+     body {
+         /* The file size of this background image is 93% smaller
+       to improve page load speed on mobile internet connections */
+         background: #343a40 !important;
+     }
+ }

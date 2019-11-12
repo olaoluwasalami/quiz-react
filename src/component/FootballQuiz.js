@@ -31,7 +31,7 @@ class FootballQuiz extends Component {
     }
     showContent(){        
         if(this.state.questionIndex < this.state.questionList.length ){
-         return <Question content = {this.state.questionList[this.state.questionIndex] } scoreQuestion={this.scoreQuestion}questionIndex={this.state.questionIndex}/>
+         return <Question content = {this.state.questionList[this.state.questionIndex]} scoreQuestion={this.scoreQuestion}questionIndex={this.state.questionIndex}/>
         }
         return  <Result score={this.state.score}/>
                  
@@ -61,7 +61,7 @@ scoreQuestion(value) {
         ); } else {
             return (
              <div>
-                 <h1> Football Quiz</h1>
+                 <h1 className="col-xs-12"> Football Quiz</h1>
                  <h3> Do you know Football? Challenge yourself</h3>
             < button className = "load"
             onClick = {this.toggleVisibility} > Click here </button>           

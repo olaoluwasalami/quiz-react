@@ -5,8 +5,9 @@ import './QuestionOptions.css'
 function  QuestionOptions(props) {
     let optionValue = props.value;
     return(
-        < div class="tev" onClick = {() => props.scoreQuestion(props.value)}>
-            <p> <input type='radio' value={optionValue} checked={false} /> {optionValue} </p>
+        < div className="tev text-white" onClick = {() => props.scoreQuestion(props.value)}>
+            <input type='radio' value={optionValue} checked={false }/> 
+            {optionValue}    
           
                  </div>
 )
